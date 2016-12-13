@@ -9,7 +9,7 @@ if(!$search) {
 				Bee
 			</td>
 			<td>
-				<input type="text" name="search" ?>">
+				<input type="text" name="search">
 			</td>
 			<td>
 				<imput type="submit" name="Search">
