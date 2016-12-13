@@ -1,0 +1,54 @@
+body {
+	font-family: sans-serif;
+}
+#body {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.text {
+	width: 1000px;
+	margin: 0 auto;
+}
+table {
+	border: none;
+	margin: 0 auto;
+}
+td.button {
+	align: center;
+}
+a.button {
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	text-decoration: none;
+	color: initial;
+	padding: 5px;
+	text-align: center;
+}
+a {
+	color: #00397a;
+	text-decoration: none;
+}
+h1 {
+	text-align: center;
+}
+tr.bees:nth-child(2n+2) {
+	background: #b3b3b3;
+}
+tr.bees td {
+	padding-left: 5px;
+}
+td.checkbox {
+	text-align: center;
+	vertical-align: middle;
+}
+#titles {
+	background: #478ad0;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+#titles td {
+	padding: 5px;
+}
