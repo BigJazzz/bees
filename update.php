@@ -12,7 +12,7 @@ if(!$search) {
 				<input type="text" name="search">
 			</td>
 			<td>
-				<imput type="submit" name="Search">
+				<input type="submit" name="Search">
 		</tr>
 	</table>
 	</form>
