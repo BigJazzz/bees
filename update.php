@@ -24,6 +24,11 @@
 				Sampled
 			</td>
 		</tr>
+		<tr>
+			<td>
+				<input type="text" name="species" value="<?php echo $beearr['name']; ?>">
+			</td>
+		</tr>
 	</table>
 	</form>
 </div>
