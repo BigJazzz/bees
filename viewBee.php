@@ -11,21 +11,10 @@
 			<a href="?p=viewBee&v=s" class="button">Sampled</a>
 		</td>
 	</tr>
-	<tr id="titles">
-		<td>
-			Species
-		</td>
-		<td>
-			Effect
-		</td>
-		<td>
-			Bred
-		</td>
-		<td>
-			Sampled
-		</td>
-	</tr>
 	<?php
+	$alphabetUpper = range('A', 'Z');
+	$i = 0;
+	$firstofthisletter = TRUE;
 	foreach($beearr as $row) {
 		if($row['bred'] == 1) {
 			$bred = 'checked';
