@@ -1,4 +1,5 @@
 <?php
+$
 if(!$search) {
 ?>
 <div id="update">
@@ -9,8 +10,8 @@ if(!$search) {
 				Bee
 			</td>
 			<td>
-				<input list="source" name="source1" class="source">
-				<datalist id="source">
+				<input list="bee" name="beeList">
+				<datalist id="bee">
 					<?php
 						   foreach($beearr as $row){
 							   if (isset($row['id'])){
