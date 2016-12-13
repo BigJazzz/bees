@@ -13,7 +13,7 @@ if(!$search) {
 				<?php
 				   foreach($beearr as $row){
 					   if (isset($row['id'])){
-						   echo "\t\t\t".'<option value="'.$row['name'].'" title="'.$row['id'].'"></option>'."\n";
+						   echo "\t\t\t".'<option value="'.$row['name'].'">'.$row['name'].'</option>'."\n";
 					   }
 				   }
 				?>
