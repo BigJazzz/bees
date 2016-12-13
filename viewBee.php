@@ -12,6 +12,7 @@
 		</td>
 	</tr>
 	<?php
+	$alphabetused = array();
 	$alphabetUpper = range('A', 'Z');
 	$i = 0;
 	$firstofthisletter = TRUE;
@@ -42,7 +43,8 @@
                 if ($firstofthisletter) {
                     echo "<th id=\"titles ".strtolower($alphabetUpper[$i])."\" colspan=\"4\">$alphabetUpper[$i]</th>\n\t";
                     echo "<tr id=\"titles\">\n\t\t<td>\n\t\t\tSpecies\n\t\t</td>\n\t\t<td>\n\t\t\tEffect\n\t\t</td>\n\t\t<td>\n\t\t\tBred\n\t\t</td>\n\t\t<td>\n\t\t\tSampled\n\t\t</td>\n\t</tr>\n";
-                    $firstofthisletter = FALSE;
+                    $alphabetused[] = $alphabetUpper[$i];
+					$firstofthisletter = FALSE;
                 }
                 echo '<tr class="bees"><td>'.$name.'</td><td>'.$effect.'</td><td class="checkbox"><input type="checkbox" value="bred'.$row['id'].'" id="bred'.$row['id'].'" '.$bred.'></td><td class="checkbox"><input type="checkbox" value="sampled'.$row['id'].'" id="sampled'.$row['id'].'" '.$sampled.'></td></tr>';
             }
