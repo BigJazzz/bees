@@ -38,6 +38,10 @@
 			$page = 'viewBee.php';
 			$title = 'View Bees';
 		}
+		elseif($page == 'update') {
+			$page = 'update.php';
+			$title = 'Update Bees';
+		}
 	}
 	else {
 		$page = 'login.php';
