@@ -12,5 +12,8 @@
 		<td class="button">
 			<a href="?p=viewBee" class="button">View Bees</a>
 		</td>
+		<td class="button">
+			<a href="?p=update" class="button">Update Bees</a>
+		</td>
 	</tr>
 </table>
