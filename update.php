@@ -1,25 +1,29 @@
 <?php
 
 ?>
-<div id="effect">
+<div id="update">
+	<form action="process.php" method="post">
 	<table>
 		<tr>
+			<td>
+				Species
+			</td>
 			<td>
 				Effect
 			</td>
 			<td>
-				Description
+				Source 1
 			</td>
-		</tr>
-		<tr>
 			<td>
-				<?php echo $effect; ?>
+				Source 2
+			</td>
+			<td>
+				Bred
+			</td>
+			<td>
+				Sampled
 			</td>
 		</tr>
 	</table>
-</div>
-<div id="bee">
-	<table>
-
-	</table>
+	</form>
 </div>
