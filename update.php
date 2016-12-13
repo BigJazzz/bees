@@ -9,15 +9,16 @@ if(!$search) {
 				Bee
 			</td>
 			<td>
-				<select name="bee">
-				<?php
-				   foreach($beearr as $row){
-					   if (isset($row['id'])){
-						   echo "\t\t\t".'<option value="'.$row['name'].'">'.$row['name'].'</option>'."\n";
-					   }
-				   }
-				?>
-				</select>
+				<input list="source" name="source1" class="source">
+				<datalist id="source">
+					<?php
+						   foreach($beearr as $row){
+							   if (isset($row['id'])){
+								   echo "\t\t\t".'<option value="'.$row['name'].'" title="'.$row['id'].'"></option>'."\n";
+							   }
+						   }
+					   ?>
+				</datalist>
 			</td>
 			<td>
 				<input type="submit" name="Search">
