@@ -2,7 +2,7 @@
 if(!$search) {
 ?>
 <div id="update">
-	<form action="process.php" method="post">
+	<form action="update.php" method="post">
 	<table>
 		<tr>
 			<td>
