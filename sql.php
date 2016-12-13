@@ -67,13 +67,4 @@
     SortByKey($effectarr, 'effect');
     SortByKey($beearr, 'name');
 
-	// Update
-	if ($page == 'update' ) {
-		$search = $_POST['bee'];
-		$post = $_POST['submit'];
-		if($post) {
-			
-		}
-	}
-
 ?>
