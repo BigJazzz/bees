@@ -9,7 +9,15 @@ if(!$search) {
 				Bee
 			</td>
 			<td>
-				<input type="text" name="search">
+				<select name="bee">
+				<?php
+				   foreach($beearr as $row){
+					   if (isset($row['id'])){
+						   echo "\t\t\t".'<option value="'.$row['name'].'" title="'.$row['id'].'"></option>'."\n";
+					   }
+				   }
+				?>
+				</select>
 			</td>
 			<td>
 				<input type="submit" name="Search">
