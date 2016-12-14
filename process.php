@@ -1,5 +1,5 @@
 <?php
-include('sql.php');
+include_once('sql.php');
 $url = $_SERVER['HTTP_REFERER'];
 $url = $url.'/?s=y';
 //echo $url;
