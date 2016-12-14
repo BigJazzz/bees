@@ -3,7 +3,12 @@
 	$username = 'bees';
 	$password = 'qn4$0B*Fjsyd';
 	$db = 'ssby';
-	$v = $_GET['v'];
+	/* This needs Cleaning up -L */
+	if (isset($_GET['v'])){
+		$v = $_GET['v'];
+	}else{
+		$v = '';
+	}
 	if($v == 'b') {
 		$filter = " WHERE bred='1' ORDER BY sampled DESC";
 	}
