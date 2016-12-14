@@ -1,7 +1,7 @@
 <div class="viewbeescontain">
 	<table>
 		<tr class="sortbuttons">
-			<td colspan="1"></td>
+			<td colspan="1">Sort By:</td>
 			<td class="button">
 				<a href="?p=viewBee&v=a" class="button">All</a>
 			</td>
@@ -42,7 +42,7 @@
 					//echo $alphabetUpper[$i];
 					if (strtoupper(substr($row['name'], 0, 1)) == $alphabetUpper[$i]) {
 						if ($firstofthisletter) {
-							echo "<tr><td class=\"alphaheader\" colspan=\"4\"><a name=\"".$alphabetUpper[$i]."\"></a>$alphabetUpper[$i] <a href=\"#\"><span id=\"bttop\">&gt;Back to top&lt;</span></a></td></tr>\n\t";
+							echo "<tr><td class=\"alphaheader\" colspan=\"4\"><a name=\"".$alphabetUpper[$i]."\"></a>$alphabetUpper[$i]</td></tr>\n\t";
 							echo "<tr id=\"titles\">\n\t\t<td>\n\t\t\tSpecies\n\t\t</td>\n\t\t<td>\n\t\t\tEffect\n\t\t</td>\n\t\t<td>\n\t\t\tBred\n\t\t</td>\n\t\t<td>\n\t\t\tSampled\n\t\t</td>\n\t</tr>\n";
 							$alphabetused[] = $alphabetUpper[$i];
 							$firstofthisletter = FALSE;
@@ -67,17 +67,35 @@
 			foreach($alphabetused as $letter){
 				echo '<a href="#'.$letter.'">'.$letter.'</a><br>'."\n\t";
 			}
-		?>
+		?><br>
+		<a href="#"><span id="bttop">Back to top</span></a>
 	</div>
 	<script>
-		/* How Do I jQuery? 
-		jQuery(window).scroll(function() {
-			if (jQuery(this).scrollTop() > 100) {
-				jQuery('.AlphaLinks').stop().animate({ top: '0px' });
-			} else {
-				jQuery('.AlphaLinks').stop().animate({ top: '1px' });
-			}
-		}); */
+		/* How Do I jQuery? */
+		// Set the Top to 0px before we begin.
+		$('.AlphaLinks').css({
+			'top': '0px'
+		});
+		$(function() {
+			//var offsetPixels = 211; // Close, but i'd rather pull from the window.
+			var offsetPixels = Math.round($('.AlphaLinks').offset().top); // offset in pix from top of window
+
+			$(window).scroll(function() {
+				var toplen = (($(window).scrollTop() - offsetPixels) + 10) + 'px';
+
+				if ( $(window).scrollTop() > offsetPixels ) {
+					//Scrolling!
+					$('.AlphaLinks').css({
+						'top': toplen
+					});
+				} else {
+					//Not Scrolling!
+					$('.AlphaLinks').css({
+						'top': '0px'
+					});
+				}
+			});
+		});
 		$(":checkbox").on("click",function(){
 			var i=$(this).attr("id").match(/\d+/);
 			var v=$(this).attr("value");

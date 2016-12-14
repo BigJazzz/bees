@@ -16,7 +16,8 @@ table {
 	width: 400px;
 }
 td.button {
-	align: center;
+	text-align: center;
+	height: 40px;
 }
 a.button {
 	-webkit-appearance: button;
@@ -69,7 +70,6 @@ div.AlphaLinks {
 	/* CSS for Floated DIV to hold Alpha links on ViewBees */
 	position: absolute;
 	right: 0px;
-	top: 0px;
 	background: #eeeeee;
 	margin: 5px;
 	width: 50px;
@@ -80,6 +80,6 @@ div.clear {
 }
 #bttop {
 	display: block;
-	text-align: right;
+	text-align: center;
 	font-size: 0.60em;
 }
