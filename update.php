@@ -85,8 +85,12 @@ else {
 				<input type="checkbox" name="sampled" <?php echo $source1; ?>>
 			</td>
 		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" value="Update">
+			</td>
+		</tr>
 	</table>
-	<input type="submit" value="Update">
 	</form>
 </div>
 <?php
