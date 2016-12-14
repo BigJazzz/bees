@@ -1,6 +1,5 @@
 <?php
 	$config = parse_ini_file('config.ini');
-	print_r($config);
 	$servername = $config['server'];
 	$username = $config['username'];
 	$password = $config['password'];
