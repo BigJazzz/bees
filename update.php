@@ -1,9 +1,12 @@
 <?php
-$post = $_POST['submit'];
+//$post = $_POST['submit'];
+$post = $_POST;
+$search = $_POST['Search'];
+//print_r($post);
 if(!$search) {
 ?>
 <div id="update">
-	<form action="update.php" method="post">
+	<form action="index.php?p=update" method="post">
 	<table>
 		<tr>
 			<td>
@@ -13,11 +16,11 @@ if(!$search) {
 				<input list="bee" name="beeList">
 				<datalist id="bee">
 					<?php
-						   foreach($beearr as $row){
-							   if (isset($row['id'])){
-								   echo "\t\t\t".'<option value="'.$row['name'].'" title="'.$row['id'].'"></option>'."\n";
-							   }
-						   }
+						//    foreach($beearr as $row){
+						// 	   if (isset($row['id'])){
+						// 		   echo "\t\t\t".'<option value="'.$row['name'].'" title="'.$row['id'].'"></option>'."\n";
+						// 	   }
+						//    }
 					   ?>
 				</datalist>
 			</td>
@@ -39,27 +42,43 @@ else {
 				Species
 			</td>
 			<td>
-				Effect
-			</td>
-			<td>
-				Source 1
-			</td>
-			<td>
-				Source 2
-			</td>
-			<td>
-				Bred
-			</td>
-			<td>
-				Sampled
+				<input type="text" name="species" value="<?php echo $name; ?>">
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<input type="text" name="species" value="<?php echo $name; ?>">
+				Effect
 			</td>
 			<td>
 				<input type="text" name="effect" value="<?php echo $effect; ?>">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Source 1
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Source 2
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Bred
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Sampled
+			</td>
+			<td>
 			</td>
 		</tr>
 	</table>
