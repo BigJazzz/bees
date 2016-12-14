@@ -22,7 +22,7 @@ if(!$search) {
 				</datalist>
 			</td>
 			<td>
-				<input type="submit" name="Search">
+				<input type="submit" value="Search" name="Search">
 		</tr>
 	</table>
 	</form>
