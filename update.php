@@ -1,5 +1,5 @@
 <?php
-$
+$post = $_POST['submit'];
 if(!$search) {
 ?>
 <div id="update">
