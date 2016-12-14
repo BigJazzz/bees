@@ -58,6 +58,7 @@ else {
 				Source 1
 			</td>
 			<td>
+				<input type="text" name="source1" value="<?php echo $source1; ?>">
 			</td>
 		</tr>
 		<tr>
@@ -65,6 +66,7 @@ else {
 				Source 2
 			</td>
 			<td>
+				<input type="text" name="source2" value="<?php echo $source2; ?>">
 			</td>
 		</tr>
 		<tr>
@@ -72,6 +74,7 @@ else {
 				Bred
 			</td>
 			<td>
+				<input type="checkbox" name="bred" <?php echo $bred; ?>>
 			</td>
 		</tr>
 		<tr>
@@ -79,9 +82,11 @@ else {
 				Sampled
 			</td>
 			<td>
+				<input type="checkbox" name="sampled" <?php echo $source1; ?>>
 			</td>
 		</tr>
 	</table>
+	<input type="submit" value="Update">
 	</form>
 </div>
 <?php
