@@ -38,7 +38,7 @@ else {
 	<form action="process.php" method="post">
 	<table>
 		<tr>
-			<td style="padding-right: 10px;">
+			<td style="padding-right: 20px;">
 				Species
 			</td>
 			<td>
