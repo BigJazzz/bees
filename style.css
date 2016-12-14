@@ -13,9 +13,11 @@ body {
 table {
 	border: none;
 	margin: 0 auto;
+	width: 400px;
 }
 td.button {
-	align: center;
+	text-align: center;
+	height: 40px;
 }
 a.button {
 	-webkit-appearance: button;
@@ -38,10 +40,16 @@ tr.bees:nth-child(2n+2) {
 }
 tr.bees td {
 	padding-left: 5px;
+	width: 110px;
 }
 td.checkbox {
 	text-align: center;
 	vertical-align: middle;
+	width: 65px;
+}
+td.alphaheader {
+	text-align: center;
+	background: #2992FF;
 }
 #titles {
 	background: #478ad0;
@@ -51,4 +59,27 @@ td.checkbox {
 }
 #titles td {
 	padding: 5px;
+}
+div.viewbeescontain {
+	/* Container div for ViewBees */
+	width: 525px;
+	margin: 0 auto;
+	position: relative;
+}
+div.AlphaLinks {
+	/* CSS for Floated DIV to hold Alpha links on ViewBees */
+	position: absolute;
+	right: 0px;
+	background: #eeeeee;
+	margin: 5px;
+	width: 50px;
+	text-align: center;
+}
+div.clear {
+	clear: both;
+}
+#bttop {
+	display: block;
+	text-align: center;
+	font-size: 0.60em;
 }
