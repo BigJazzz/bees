@@ -1,6 +1,6 @@
 <?php
 	//echo md5(sha1('Password'));
-	include('sql.php');
+	include_once('sql.php');
 	$domain = $_SERVER['HTTP_HOST'];
 	$url = "https://" . $domain . $_SERVER['REQUEST_URI'];
 	//echo $url;
