@@ -1,10 +1,10 @@
 <?php
 	$config = parse_ini_file('config.ini');
 	print_r($config);
-	$servername = '';
-	$username = '';
-	$password = '';
-	$db = '';
+	$servername = $config['server'];
+	$username = $config['username'];
+	$password = $config['password'];
+	$db = $config['db'];
 	$v = $_GET['v'];
 	if($v == 'b') {
 		$filter = " WHERE bred='1' ORDER BY sampled DESC";
