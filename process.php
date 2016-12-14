@@ -2,17 +2,13 @@
 include_once('sql.php');
 $url = $_SERVER['HTTP_REFERER'];
 $url = $url.'/?s=y';
-//echo $url;
 $submitEffect = $_POST['submitEffect'];
 $submitBee = $_POST['submitBee'];
 $post = $_POST;
 $get = $_GET;
 $updateID = $_GET['id'];
-//print_r($post);
-//print_r($get);
 
 if($submitEffect) {
-	//echo 'Effect';
 	$effectName = $_POST['effect'];
 	$effectDesc = $_POST['desc'];
 	$effect = mysqli_real_escape_string($conn, $effectName);
@@ -26,7 +22,6 @@ if($submitEffect) {
 }
 
 if($submitBee) {
-	//echo 'Bee<br>';
 	$species = $_POST['species'];
 	$beeEffect = $_POST['effect'];
 	$source1 = $_POST['source1'];
